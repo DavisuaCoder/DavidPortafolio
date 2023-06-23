@@ -18,12 +18,12 @@ git clone https://github.com/agcrisbp/ADResume
 
 - Install all the dependencies:
 ```
-yarn install
+npm install
 ```
 
 - Run the project:
 ```
-yarn dev
+npm run dev
 ```
 
 > Edit all my information & deploy.
