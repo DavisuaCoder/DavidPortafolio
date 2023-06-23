@@ -1,0 +1,12 @@
+{
+    "hello": "Halo",
+    "goodbye": "Sampai jumpa",
+    "pageTitles": {
+        "about": "Tentang",
+        "resume": "Pengalaman",
+        "portfolio": "Proyek",
+        "blog": "Artikel",
+        "event": "Acara",
+        "github": "Github"
+    }
+}
