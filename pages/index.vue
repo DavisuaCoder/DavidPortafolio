@@ -129,28 +129,11 @@ const { data: about } = await useFetch('/api/about')
 
       <ul class="clients-list has-scrollbar">
         <li class="clients-item">
-          <a href="https://musixmatch.com" target="_blank">
-            <img src="https://i.ibb.co/s31h8NW/mxm.png" alt="Musixmatch">
+          <a href="https://example.com" target="_blank">
+            <img src="/.png" alt="Company">
           </a>
         </li>
 
-        <li class="clients-item">
-          <a href="https://blast.tv" target="_blank">
-            <img src="https://i.ibb.co/b7zYpx9/blast.png" alt="BLAST">
-          </a>
-        </li>
-
-        <li class="clients-item">
-          <a href="https://www.crunchbase.com/organization/team-solomid" target="_blank">
-            <img src="https://i.ibb.co/3kqfBKf/TSM-Logo-svg.png" alt="TSM">
-          </a>
-        </li>
-
-        <li class="clients-item">
-          <a href="https://discord.com/" target="_blank">
-            <img src="https://i.ibb.co/C7ZTbW6/discord.png" alt="Discord">
-          </a>
-        </li>
       </ul>
     </section>
   </article>
