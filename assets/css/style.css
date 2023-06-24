@@ -404,31 +404,31 @@ main {
   gap: 16px;
 }
 
-.contact-item {
+.github-item {
   min-width: 100%;
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.contact-info {
+.github-info {
   max-width: calc(100% - 46px);
   width: calc(100% - 46px);
 }
 
-.contact-title {
+.github-title {
   color: var(--light-gray-70);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
 }
 
-.contact-info :is(.contact-link, time, address) {
+.github-info :is(.github-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
 }
 
-.contact-info address { font-style: normal; }
+.github-info address { font-style: normal; }
 
 .social-list {
   display: flex;
@@ -1127,7 +1127,7 @@ main {
 
 
 /*-----------------------------------*\
-  #CONTACT
+  #GITHUB
 \*-----------------------------------*/
 
 .mapbox {
@@ -1149,7 +1149,7 @@ main {
   filter: grayscale(1) invert(1);
 }
 
-.contact-form { margin-bottom: 10px; }
+.github-form { margin-bottom: 10px; }
 
 .form-title { margin-bottom: 20px; }
 
@@ -1370,7 +1370,7 @@ textarea.github::-webkit-resizer { display: none; }
 
   .contacts-list { gap: 20px; }
 
-  .contact-info {
+  .github-info {
     max-width: calc(100% - 64px);
     width: calc(100% - 64px);
   }
@@ -1537,7 +1537,7 @@ textarea.github::-webkit-resizer { display: none; }
 
 
   /**
-   * #CONTACT
+   * #GITHUB
    */
 
   .mapbox {
@@ -1651,7 +1651,7 @@ textarea.github::-webkit-resizer { display: none; }
 
 
   /**
-   * CONTACT
+   * github
    */
 
   .input-wrapper { grid-template-columns: 1fr 1fr; }
@@ -1875,13 +1875,13 @@ textarea.github::-webkit-resizer { display: none; }
 
   .contacts-list { grid-template-columns: 1fr; }
 
-  .contact-info :is(.contact-link) {
+  .github-info :is(.github-link) {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .contact-info :is(.contact-link, time, address) {
+  .github-info :is(.github-link, time, address) {
     --fs-7: 14px;
     font-weight: var(--fw-300);
   }

@@ -12,7 +12,7 @@ useHead({
       </h2>
     </header>
 
-    <section class="contact-form">
+    <section class="github-form">
         <div class="input-wrapper">
           <div
         v-for="repo in repos"
