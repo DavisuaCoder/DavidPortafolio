@@ -1,4 +1,4 @@
-![Logo](/public/images/logo.png)
+<center><img src="/public/images/sign.png" width="150px" height="150px" /></center>
 
 ### About
 - Resume/Portfolio website using Vue (Nuxt 3) extends from [codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio).
