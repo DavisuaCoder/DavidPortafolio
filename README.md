@@ -2,6 +2,7 @@
 
 <p align="center">
     <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/agcrisbp/3b92952e19a3c35b245a495e1e7f075f/raw/ebfdee6fbce754be170221c466fdecb9d8353c39/clone.json&logo=github'>
+    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Uniques&query=uniques&url=https://gist.githubusercontent.com/agcrisbp/3b92952e19a3c35b245a495e1e7f075f/raw/ebfdee6fbce754be170221c466fdecb9d8353c39/clone.json&logo=github'>
 </p>
 
 ### About
