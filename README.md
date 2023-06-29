@@ -1,8 +1,8 @@
 <center><img src="/public/images/sign.png" /></center>
 
 <p align="center">
-    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/agcrisbp/5079a593a8985c711db095c0d4cfa440/raw/e3b76b421bb94caea9fbdc84722d152aeec5cb23/clone.json&logo=github'>
-    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Unique&query=uniques&url=https://gist.githubusercontent.com/agcrisbp/5079a593a8985c711db095c0d4cfa440/raw/e3b76b421bb94caea9fbdc84722d152aeec5cb23/clone.json&logo=githubactions'>
+    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/agcrisbp/5079a593a8985c711db095c0d4cfa440/raw/4ab5c508010ec49b882d11812443622a469efa54/clone.json&logo=github'>
+    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Unique&query=uniques&url=https://gist.githubusercontent.com/agcrisbp/5079a593a8985c711db095c0d4cfa440/raw/4ab5c508010ec49b882d11812443622a469efa54/clone.json&logo=githubactions'>
 </p>
 
 ### About
