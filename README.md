@@ -24,7 +24,6 @@
 ### Quick Start
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/agcrisbp/ADResume)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/agcrisbp/ADResume)
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/H4Zy6r?referralCode=AkXLw2)
 
 ---
 
