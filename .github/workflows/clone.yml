@@ -48,7 +48,7 @@ jobs:
 
       - name: update clone.json
         run: |
-          curl https://raw.githubusercontent.com/agcrisbp/ADResume/main/main.py > main.py
+          curl https://raw.githubusercontent.com/agcrisbp/github-clone-count-api/main/main.py > main.py
           python3 main.py
 
       - name: Update gist with latest count
@@ -63,7 +63,7 @@ jobs:
           if [ ! -f CLONE.md ]; then
             shields="https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url="
             url="https://gist.githubusercontent.com/${{ github.actor }}/${{ steps.set_id.outputs.GIST }}/raw/clone.json"
-            repo="https://github.com/agcrisbp/ADResume"
+            repo="https://github.com/agcrisbp/github-clone-count-api"
             echo ''> CLONE.md
             echo '
             **Markdown**
