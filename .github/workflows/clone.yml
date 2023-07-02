@@ -1,8 +1,8 @@
-name: GitHub Clone Count Update 24h
+name: GitHub Clone Count Update Every 1h
 
 on:
   schedule:
-    - cron: "0 */24 * * *"
+    - cron: "0 */1 * * *"
   workflow_dispatch:
 
 jobs:
