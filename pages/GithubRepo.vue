@@ -25,7 +25,7 @@
         </svg>
         <span>{{ repository.stargazers_count }}</span>
       </div>
-      <div v-if="repository.forks" class="flex items-center">
+      <div v-if="repository.size" class="flex items-center">
         <svg class="w-4 h-4 fill-current mr-2" aria-label="fork" viewBox="0 0 16 16" role="img">
           <path fill-rule="evenodd" :d="icon.fork"></path>
         </svg>
