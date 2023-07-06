@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.7",
-    "@iconify-icons/devicon": "^1.2.12",
+    "@iconify-icons/devicon": "^1.2.13",
     "@iconify-json/carbon": "^1.1.18",
     "@iconify-json/twemoji": "^1.1.11",
     "@iconify/vue": "^4.1.1",
@@ -21,7 +21,7 @@
     "@pinia/nuxt": "^0.4.11",
     "@vueuse/nuxt": "^10.2.1",
     "eslint": "^8.44.0",
-    "nuxt": "^3.6.1",
+    "nuxt": "^3.6.2",
     "pinia": "^2.1.4",
     "tailwindcss-dark-mode": "^1.1.7",
     "typescript": "^5.1.6",
@@ -39,6 +39,6 @@
     "swr": "^2.2.0",
     "vue-cookies": "^1.8.3",
     "vue-meta": "^2.4.0",
-    "vue-router": "^4.2.2"
+    "vue-router": "^4.2.3"
   }
 }
