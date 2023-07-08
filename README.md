@@ -12,7 +12,7 @@
 - Bahasa Indonesia & English.
 
 ### Demo
-- Check the live version [here](https://about.agcrisbp.my.id).
+- Check the live version [here](https://bit.ly/ADLink-Showcase).
 
 ### Support
 <a href="https://www.buymeacoffee.com/agcrisbp" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 32px !important;width: 114px !important;" ></a>
