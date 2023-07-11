@@ -34,7 +34,7 @@
     "axios": "^1.4.0",
     "framer-motion": "^10.12.18",
     "primeicons": "^6.0.1",
-    "primevue": "^3.29.2",
+    "primevue": "^3.30.0",
     "react": "^18.2.0",
     "swr": "^2.2.0",
     "vue-cookies": "^1.8.3",
