@@ -22,7 +22,7 @@ const { data: about } = await useFetch('/api/about')
 
 <template>
   <div class="general-container">
-    <article class="about active" data-page="about">
+    <article id="about" class="about active" data-page="about">
       <header>
         <h2 class="h2 article-title">
           {{ $t('pageTitles.about') }}

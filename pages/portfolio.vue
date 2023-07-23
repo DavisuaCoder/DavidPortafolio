@@ -43,7 +43,7 @@ function closeItem() {
 </script>
 
 <template>
-  <article class="portfolio active" data-page="portfolio">
+  <article id="portfolio" class="portfolio active" data-page="portfolio">
     <header>
       <h2 class="h2 article-title">
         {{ $t('pageTitles.portfolio') }}

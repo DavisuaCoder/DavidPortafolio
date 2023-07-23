@@ -5,7 +5,7 @@ useHead({
 </script>
 
 <template>
-  <article class="github active" data-page="github">
+  <article id="github" class="github active" data-page="github">
     <header>
       <h2 class="h2 article-title">
         {{ $t('pageTitles.github') }}
