@@ -14,13 +14,13 @@ function toggleMenu() {
       </figure>
 
       <div class="info-content">
-        <h1 class="name" title="Agcrismanto Budhi Praswastyka">
-          Agcrismanto Budhi Praswastyka
+        <h1 class="name" title="David Alvarez">
+          David Álvarez
         </h1>
 
         <p class="title text-center xl:block flex items-center justify-center gap-1">
-          <span class="xl:after:content-[''] after:content-[',']">Cybersecurity</span>
-          <span>Web Developer</span>
+          <span class="xl:after:content-[''] after:content-[',']">Solutions Architect</span>
+          <span>Full Stack Developer</span>
         </p>
       </div>
 
@@ -37,30 +37,29 @@ function toggleMenu() {
       <ul class="contacts-list">
         <li class="contact-item">
           <div class="icon-box">
-            <ion-icon name="logo-twitter" />
+            <ion-icon name="mail-outline"></ion-icon>
           </div>
 
           <div class="contact-info">
-            <p class="contact-title">
-              Twitter
-            </p>
+            <p class="contact-title">Email</p>
 
-            <a href="https://twitter.com/agcrisbp" class="contact-link" target="_blank">agcrisbp</a>
+            <a href="mailto:david.alvarez.perales99@gmail.com" class="contact-link">david.alvarez.perales99@gmail.com</a>
           </div>
+
         </li>
 
         <li class="contact-item">
+
           <div class="icon-box">
-            <ion-icon name="logo-github" />
+            <ion-icon name="phone-portrait-outline"></ion-icon>
           </div>
 
           <div class="contact-info">
-            <p class="contact-title">
-              Github
-            </p>
+            <p class="contact-title">Phone</p>
 
-            <a href="https://github.com/agcrisbp" class="contact-link" target="_blank">agcrisbp</a>
+            <a href="tel:+34689571913" class="contact-link">+34 689 571 913</a>
           </div>
+
         </li>
 
         <li class="contact-item">
@@ -73,7 +72,7 @@ function toggleMenu() {
               Linkedin
             </p>
 
-            <a href="https://id.linkedin.com/in/agcrisbp" class="contact-link" target="_blank">Agcrismanto Budhi Praswastyla</a>
+            <a href="https://www.linkedin.com/in/david-alvarez-perales/" class="contact-link" target="_blank">David Álvarez Perales</a>
           </div>
         </li>
 
@@ -87,7 +86,7 @@ function toggleMenu() {
               Location
             </p>
 
-            <address>Indonesia</address>
+            <address>Madrid, Spain</address>
           </div>
         </li>
       </ul>
@@ -95,11 +94,6 @@ function toggleMenu() {
       <div class="separator" />
 
       <ul class="social-list">
-        <li class="social-item">
-          <NuxtLink to="mailto:agcrisbp@email.com" class="social-link" target="_blank">
-            <ion-icon name="mail-outline" />
-          </NuxtLink>
-        </li>
         <LangSwitcher2 />
       </ul>
     </div>

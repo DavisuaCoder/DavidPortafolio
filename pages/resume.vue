@@ -16,27 +16,53 @@ useHead({
       <ol class="timeline-list">
         <li class="timeline-item">
           <h4 class="h4 timeline-item-title">
-            Company
+            Dars Telecom
           </h4>
-          <span>From — Until</span>
+          <span>DEC 2022 — Current</span>
           <p class="timeline-item-desc">
-            Location
+            Madrid, Spain
           </p>
           <p class="timeline-text">
-            Position
+              Solutions Architect
+          </p>
+        </li>
+
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">
+            Dars Telecom
+          </h4>
+          <span>SEP 2022 — DEC 2022</span>
+          <p class="timeline-item-desc">
+            Madrid, Spain
+          </p>
+          <p class="timeline-text">
+            Systems Engineer
           </p>
         </li>
         
         <li class="timeline-item">
           <h4 class="h4 timeline-item-title">
-            Company
+            Accenture
           </h4>
-          <span>From — Until</span>
+          <span>JUN 2022 — SEP 2022</span>
           <p class="timeline-item-desc">
-            Location
+            Madrid, Spain
           </p>
           <p class="timeline-text">
-            Position
+            Project Management Officer
+          </p>
+        </li>
+
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">
+            Automoviles Aerolan
+          </h4>
+          <span>JUN 2021 — JUN 2022</span>
+          <p class="timeline-item-desc">
+            Madrid, Spain
+          </p>
+          <p class="timeline-text">
+            Full Stack Developer 
           </p>
         </li>
       </ol>

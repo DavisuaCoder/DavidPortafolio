@@ -50,7 +50,7 @@ export default {
         .then(res => (this.colors = res.data));
     },
     getRepos() {
-      axios.get("https://api.github.com/users/agcrisbp/repos").then(res => {
+      axios.get("https://api.github.com/users/DavisuaCoder/repos").then(res => {
         this.repos = res.data
           .filter(repo => !repo.all)
           .sort(
