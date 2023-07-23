@@ -10,7 +10,7 @@ function toggleMenu() {
   <aside class="sidebar" :class="{ active: isOpen }">
     <div class="sidebar-info">
       <figure class="avatar-box">
-        <img src="/images/avatar.png" alt="Photo" width="80">
+        <img src="/images/avatar2.png" alt="Photo" width="80">
       </figure>
 
       <div class="info-content">
@@ -57,7 +57,7 @@ function toggleMenu() {
           <div class="contact-info">
             <p class="contact-title">Phone</p>
 
-            <a href="tel:+34689571913" class="contact-link">+34 689 571 913</a>
+            <a href="tel:+34689571913" class="contact-link">689 571 913</a>
           </div>
 
         </li>
