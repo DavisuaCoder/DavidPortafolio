@@ -60,7 +60,7 @@ const { data: about } = await useFetch('/api/about')
       </section>
     </article>
     <resume />
-    <portfolio />
     <github />
+    <portfolio />
   </div>
 </template>

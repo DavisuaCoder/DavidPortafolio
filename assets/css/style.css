@@ -646,12 +646,29 @@ main {
   box-shadow: 0 0 0 4px var(--jet);
 }
 
+/**
+ * Technology
+ */
+
 .timeline-text {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
 
+.job-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.job-technologies li {
+  background-color: #868686;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.65rem;
+  font-size: 0.8rem;
+}
 
 /**
  * skills 
@@ -980,6 +997,15 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
   padding: 13px 20px;
+}
+.github-repository {
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  padding: 13px 20px;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  outline: none;
 }
 
 .contact::placeholder { font-weight: var(--fw-500); }

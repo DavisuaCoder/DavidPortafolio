@@ -17,7 +17,7 @@ useHead({
           <div
         v-for="repo in repos"
         :key="repo.id"
-        class="github"
+        class="github-repository"
       >
         <GithubReposItem
           :repository="repo"

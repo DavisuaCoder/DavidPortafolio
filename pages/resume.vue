@@ -1,9 +1,3 @@
-<script setup>
-useHead({
-  title: 'Resume',
-})
-</script>
-
 <template>
   <article id="resume" class="resume active" data-page="resume">
     <header>
@@ -13,77 +7,96 @@ useHead({
     </header>
 
     <section class="timeline">
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="business-outline"></ion-icon>
+        </div>
+        <h3 class="h3">Experience</h3>
+      </div>
       <ol class="timeline-list">
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            Dars Telecom
-          </h4>
-          <span>DEC 2022 — Current</span>
-          <p class="timeline-item-desc">
-            Madrid, Spain
-          </p>
-          <p class="timeline-text">
-              Solutions Architect
-          </p>
-        </li>
+        <li class="timeline-item" v-for="job in experience" :key="job.title">
+          <h4 class="h4 timeline-item-title">{{ job.title }}</h4>
+          <span>{{ job.date }}</span>
+          <p class="timeline-item-desc">{{ job.location }}</p>
+          <p class="timeline-text">{{ job.role }}</p>
 
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            Dars Telecom
-          </h4>
-          <span>SEP 2022 — DEC 2022</span>
-          <p class="timeline-item-desc">
-            Madrid, Spain
-          </p>
-          <p class="timeline-text">
-            Systems Engineer
-          </p>
-        </li>
-        
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            Accenture
-          </h4>
-          <span>JUN 2022 — SEP 2022</span>
-          <p class="timeline-item-desc">
-            Madrid, Spain
-          </p>
-          <p class="timeline-text">
-            Project Management Officer
-          </p>
-        </li>
-
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            Automoviles Aerolan
-          </h4>
-          <span>JUN 2021 — JUN 2022</span>
-          <p class="timeline-item-desc">
-            Madrid, Spain
-          </p>
-          <p class="timeline-text">
-            Full Stack Developer 
-          </p>
+          <!-- Etiquetas de tecnologías -->
+          <ul class="job-technologies">
+            <li v-for="technology in job.technologies" :key="technology">
+              {{ technology }}
+            </li>
+          </ul>
         </li>
       </ol>
     </section>
 
-    <section class="skill">
-      <ul class="skills-list content-card">
-        <li class="skills-item">
-          <div class="title-wrapper">
-            <h5 class="h5">
-              Your Skill
-            </h5>
-            <data value="90">90%</data>
-          </div>
+    <section class="timeline">
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="book-outline"></ion-icon>
+        </div>
 
-          <div class="skill-progress-bg">
-            <div class="skill-progress-fill" style="width: 90%;" />
-          </div>
+        <h3 class="h3">Education</h3>
+      </div>
+      <ol class="timeline-list">
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">
+            UC3M UNIVERSITY 
+          </h4>
+          <span>2018 — 2023</span>
+          <p class="timeline-item-desc">
+            Madrid, Spain
+          </p>
+          <p class="timeline-text">
+            Dual Bachelor of Computer Engineering and Business Administration
+          </p>
         </li>
-
-      </ul>
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">
+            CAMILO JOSÉ CELA UNIVERSITY
+          </h4>
+          <span>2022 — 2023</span>
+          <p class="timeline-item-desc">
+            Madrid, Spain
+          </p>
+          <p class="timeline-text">
+            Bachelor of Agile Organizations and Digital Transformation
+          </p>
+        </li>
+      </ol>
     </section>
   </article>
 </template>
+
+<script setup>
+const experience = [
+  {
+    title: 'Dars Telecom',
+    date: 'DEC 2022 — Current',
+    location: 'Madrid, Spain',
+    role: 'Solutions Architect',
+    technologies: ['Python', 'Java', 'JPA', 'Excel'],
+  },
+  {
+    title: 'Dars Telecom',
+    date: 'SEP 2022 — DEC 2022',
+    location: 'Madrid, Spain',
+    role: 'Systems Engineer',
+    technologies: ['Bash', 'Linux/Unix', 'Python', 'VMWare', 'Oracle'],
+  },
+  {
+    title: 'Accenture',
+    date: 'JUN 2022 — SEP 2022',
+    location: 'Madrid, Spain',
+    role: 'Project Management Officer',
+    technologies: ['Excel', 'PowertPoint', 'Power Bi'],
+  },
+  {
+    title: 'Automoviles Aerolan',
+    date: 'JUN 2021 — JUN 2022',
+    location: 'Madrid, Spain',
+    role: 'Full Stack Developer',
+    technologies: ['Vue', 'Node', 'MongoDB'],
+  },
+]
+</script>
