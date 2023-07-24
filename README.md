@@ -9,15 +9,10 @@
 - Resume/Portfolio website using Vue (Nuxt 3) extends from [codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio).
 
 ### i18n
-- Bahasa Indonesia & English.
+- Spanish & English.
 
 ### Demo
 - Check the live version [here](https://bit.ly/ADLink-Showcase).
-
-### Support
-<a href="https://www.buymeacoffee.com/agcrisbp" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 32px !important;width: 114px !important;" ></a>
-<a href="https://saweria.co/agcrisbp" target="_blank"><img src="https://aghea.site/saweria-button.png" alt="Saweria" style="height: 30px !important;width: 114px !important;" ></a>
-<a href="https://github.com/sponsors/agcrisbp" target="_blank"><img src="/public/sponsor-badge.svg" alt="Github Sponsor" style="height: 30px !important;width: 114px !important;" ></a>
 
 ---
 
@@ -31,7 +26,7 @@
 
 - Clone this repo:
 ```
-git clone https://github.com/agcrisbp/ADResume
+git clone https://github.com/DavisuaCoder/DavidPortafolio.git
 ```
 
 - Install all the dependencies:
