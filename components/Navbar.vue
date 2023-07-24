@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
   <nav class="navbar">
     <ul class="navbar-list">
@@ -31,6 +27,10 @@
     </ul>
   </nav>
 </template>
+
+<script setup>
+
+</script>
 
 <style scoped>
 a.router-link-active {

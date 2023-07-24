@@ -75,7 +75,7 @@ const experience = [
     date: 'DEC 2022 — Current',
     location: 'Madrid, Spain',
     role: 'Solutions Architect',
-    technologies: ['Python', 'Java', 'JPA', 'Excel'],
+    technologies: ['Python', 'Java', 'JPA', 'CI/CD', 'Excel'],
   },
   {
     title: 'Dars Telecom',
@@ -89,7 +89,7 @@ const experience = [
     date: 'JUN 2022 — SEP 2022',
     location: 'Madrid, Spain',
     role: 'Project Management Officer',
-    technologies: ['Excel', 'PowertPoint', 'Power Bi'],
+    technologies: ['Excel', 'PowertPoint', 'Power BI'],
   },
   {
     title: 'Automoviles Aerolan',
