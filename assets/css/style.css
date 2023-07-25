@@ -1494,10 +1494,12 @@ textarea.contact::-webkit-resizer { display: none; }
   }
 
   .navbar-scroll {
-    position: fixed;
+    position: sticky;
+    bottom: auto;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: auto;
+    right: 0;
+    width: auto;
     background: hsla(240, 1%, 17%, 0.75);
     backdrop-filter: blur(10px);
     border: 1px solid var(--jet);
