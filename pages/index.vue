@@ -1,25 +1,3 @@
-<script setup>
-import { useI18n } from 'vue-i18n'
-import Resume from './resume.vue'
-import Portfolio from './portfolio.vue';
-import Github from './github.vue';
-
-useHead({
-})
-
-onMounted(() => {
-  useLocaleStore()
-})
-
-const { locale } = useI18n({ useScope: 'global' })
-
-/* Services */
-const { data: services } = await useFetch('/api/services')
-
-/* Services */
-const { data: about } = await useFetch('/api/about')
-</script>
-
 <template>
   <div class="general-container">
     <article id="about" class="about active" data-page="about">
@@ -49,3 +27,25 @@ const { data: about } = await useFetch('/api/about')
     <portfolio />
   </div>
 </template>
+
+<script setup>
+import { useI18n } from 'vue-i18n'
+import Resume from './resume.vue'
+import Portfolio from './portfolio.vue';
+import Github from './github.vue';
+
+useHead({
+})
+
+onMounted(() => {
+  useLocaleStore()
+})
+
+const { locale } = useI18n({ useScope: 'global' })
+
+/* Services */
+const { data: services } = await useFetch('/api/services')
+
+/* Services */
+const { data: about } = await useFetch('/api/about')
+</script>
