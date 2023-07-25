@@ -439,6 +439,7 @@ main {
 
 .navbar {
   position: fixed;
+  top: 0;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -467,11 +468,6 @@ main {
 
 .navbar-link:hover,
 .navbar-link:focus { color: var(--light-gray-70); }
-
-.navbar-link.active { color: var(--vegas-gold); }
-
-
-
 
 
 /*-----------------------------------*\
@@ -1219,7 +1215,9 @@ textarea.contact::-webkit-resizer { display: none; }
    * #NAVBAR
    */
 
-  .navbar { border-radius: 20px 20px 0 0; }
+  .navbar { 
+    bottom: auto;
+   }
 
   .navbar-list { gap: 20px; }
 
@@ -1494,6 +1492,20 @@ textarea.contact::-webkit-resizer { display: none; }
     padding: 0 20px;
     box-shadow: none;
   }
+
+  .navbar-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: hsla(240, 1%, 17%, 0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--jet);
+    border-radius: 0;
+    box-shadow: var(--shadow-2);
+    z-index: 5;
+  }
+
 
   .navbar-list {
     gap: 30px;
