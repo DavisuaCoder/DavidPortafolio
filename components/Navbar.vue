@@ -41,10 +41,6 @@ const handleScroll = () => {
   const scrollY = window.scrollY;
   const scrollTop = window.scrollY;
   const headerHeight = 50; // Altura de la cabecera (ajusta según tu diseño)
-  
-  console.log('ScrollY',scrollY)
-
-  console.log('github',githubSection.offsetTop)
 
   if (scrollTop < headerHeight) {
     activeSection.value = 'about';
@@ -91,5 +87,4 @@ onUnmounted(() => {
   font-weight: bold;
 }
 
-/* Resto de tus estilos para el navbar aquí */
 </style>
