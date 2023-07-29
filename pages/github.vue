@@ -62,12 +62,17 @@ export default {
         const languageResponses = await Promise.all(languagePromises);
         const languageDataList = languageResponses.map(res => res.data);
 
-        // Asignar los datos de lenguajes a cada repositorio
-        repos.forEach((repo, index) => {
-          repo.languages = languageDataList[index];
+        // Ordenar los datos de lenguajes para cada repositorio (los tres más utilizados primero)
+        languageDataList.forEach((languageData, index) => {
+          const sortedLanguages = Object.keys(languageData).sort(
+            (a, b) => languageData[b] - languageData[a]
+          );
+          const topLanguages = sortedLanguages.slice(0, 3);
+          repos[index].topLanguages = topLanguages;
         });
 
         this.repos = repos;
+        console.log(this.repos);
       } catch (error) {
         console.error("Error al obtener los repositorios:", error);
       }
@@ -76,7 +81,6 @@ export default {
   async mounted() {
     await this.getColors();
     this.getRepos();
-    console.log(this.repos);
   },
   components: {
     GithubReposItem
