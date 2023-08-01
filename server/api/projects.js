@@ -24,7 +24,7 @@ export default defineEventHandler(() => {
           en: 'View Project',
           id_ID: 'Lihat Proyek',
         },
-      image: '/images/ine.jpg',
+      image: '/images/sign.png',
       url: 'https://ite.aghea.site',
     },
   ]
