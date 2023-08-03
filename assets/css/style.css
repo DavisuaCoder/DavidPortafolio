@@ -994,7 +994,7 @@ main {
   font-weight: var(--fw-400);
   padding: 13px 20px;
 }
-.github-repository {
+/* .github-repository {
   color: var(--white-2);
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
@@ -1002,7 +1002,7 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   outline: none;
-}
+} */
 
 .contact::placeholder { font-weight: var(--fw-500); }
 

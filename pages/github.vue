@@ -31,7 +31,7 @@ useHead({
 
 <script>
 import axios from "axios";
-import GithubReposItem from "./GithubRepo.vue";
+import GithubReposItem from "./GithubRepo2.vue";
 
 export default {
   name: "GithubRepos",
