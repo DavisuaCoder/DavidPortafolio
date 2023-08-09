@@ -49,6 +49,17 @@ export default {
         )
         .then(res => (this.colors = res.data));
     },
+    getLanguagesColors(languages) {
+      const colors = [];
+      for (const language of languages) {
+        if (this.colors[language]) {
+          colors.push(this.colors[language].color);
+        } else {
+          colors.push('#ffffff'); // Color predeterminado si no se encuentra el color del lenguaje
+        }
+      }
+      return colors;
+    },
     async getRepos() {
       try {
         const reposResponse = await axios.get("https://api.github.com/users/DavisuaCoder/repos");
@@ -72,7 +83,8 @@ export default {
         });
 
         this.repos = repos;
-        console.log(this.repos);
+        console.log(this.colors);
+
       } catch (error) {
         console.error("Error al obtener los repositorios:", error);
       }
