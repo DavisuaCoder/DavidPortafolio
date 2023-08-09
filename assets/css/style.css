@@ -53,6 +53,12 @@
   --bittersweet-shimmer: hsl(0, 43%, 51%);
   --text-gradient-yellow: hsl(37, 90%, 51%);
 
+  --color-primary: #4A90E2; /* Azul claro */
+  --color-secondary: #34495E; /* Azul oscuro */
+  --color-accent: #2E4053; /* Azul más oscuro */
+  --color-text: white;
+  --color-text-light: #BDC3C7; /* Gris claro */
+
   /**
    * typography
    */

@@ -13,15 +13,22 @@
           <p>{{ repository.description }}</p>
         </div>
         <div class="languages-used">
-          <div class="language-tag" v-for="language in repository.topLanguages" :style="{ backgroundColor: language ? bgColor : '' }">
-            {{ language }}
+          <div class="language-item" v-for="language in repository.topLanguages" :key="language">
+            <div class="language-circle">
+              <ion-icon :name="getLanguageIconName(language)" class="language-icon"></ion-icon>
+            </div>
+            <div class="language-name">{{ language }}</div>
           </div>
         </div>
-        <div class="repository-link">
-          <a :href="repository.html_url" target="_blank">
-            <ion-icon name="logo-github" class="github-icon"></ion-icon>
-            {{repository.html_url}}
-          </a>
+        <div class="links-section">
+          <div class="link-item">
+            <ion-icon name="log-out-outline" class="link-icon"></ion-icon>
+            <a :href="repository.website" target="_blank">Website</a>
+          </div>
+          <div class="link-item">
+            <ion-icon name="logo-github" class="link-icon"></ion-icon>
+            <a :href="repository.html_url" target="_blank">{{repository.html_url}}</a>
+          </div>
         </div>
       </div>
     </div>
@@ -46,6 +53,17 @@ export default {
   methods: {
     openRepository() {
       window.open(this.repository.html_url, '_blank');
+    }, 
+    getLanguageIconName(language) {
+      const languageIcons = {
+        JavaScript: 'logo-javascript',
+        Python: 'logo-python',
+        HTML: 'logo-html5',
+        CSS: 'logo-css3',
+        Vue: 'logo-vue'
+      };
+
+      return languageIcons[language] || 'code';
     }
   }
 };
@@ -54,14 +72,14 @@ export default {
 <style>
 .flip-card {
   perspective: 1000px;
-  height: 320px;
+  height: 307px;
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s;
+  transition: transform var(--transition-1);
   transform-style: preserve-3d;
 }
 
@@ -75,93 +93,143 @@ export default {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 10px; /* Redondear los bordes de ambas caras */
+  border-radius: 10px;
 }
 
 .flip-card-front {
-  background-color: #333;
+  background-color: var(--color-secondary); /* Utilizando la variable */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-1); /* Utilizando la variable */
   cursor: pointer;
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
+  color: var(--color-text); /* Utilizando la variable */
+  font-family: var(--ff-poppins); /* Utilizando la variable */
   text-align: center;
 }
 
 .flip-card-back {
-  background-color: #333;
+  background-color: var(--color-secondary); /* Utilizando la variable */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-3); /* Utilizando la variable */
   cursor: pointer;
   transform: rotateY(180deg);
   flex-grow: 1;
   padding: 1rem;
-  color: #333;
+  color: var(--white-1); /* Utilizando la variable */
   font-family: 'Segoe UI', sans-serif;
+  transition: transform var(--transition-1), background-color var(--transition-1);
+}
+
+.flip-card:hover .flip-card-back {
+  transform: rotateY(180deg);
+  background-color: var(--color-secondary); /* Utilizando la variable */
 }
 
 .repository-img {
   width: 100%;
   height: auto;
   margin: 0;
-  border-top-left-radius: 10px; /* Redondear la esquina superior izquierda */
-  border-top-right-radius: 10px; /* Redondear la esquina superior derecha */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .repository-name {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: var(--fs-4);
+  font-weight: var(--fw-500);
   margin: 1rem 0;
 }
 
+.repository-name-back {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  color: var(--color-primary); /* Azul claro */
+}
+
 .project-description {
-  font-size: 1rem;
+  font-size: var(--fs-6);
   margin-bottom: 1rem;
   line-height: 1.4;
-  color: white;
+  color: var(--light-gray);
 }
 
 .languages-used {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.language-tag {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.2rem 0.5rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
+.language-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s, color 0.3s;
+  background-color: var(--color-accent); /* Utilizando la variable */
+  color: var(--white-1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.65rem;
+  font-size: 0.9rem;
 }
 
-.repository-link {
-  margin-top: auto;
-  text-align: center;
+.language-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
 }
 
-.repository-link a {
-  color: #007bff;
-  text-decoration: none;
-  font-size: 1rem;
+.language-icon {
+  font-size: 1.3rem;
+  color: var(--color-primary); /* Azul claro */
 }
 
-.repository-name-back {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 1rem 0;
-  color: white;
+.language-item:hover {
+  transform: scale(1.1); /* Cambiar la escala en hover */
+  background-color: var(--color-primary); /* Cambio de color en hover */
 }
 
-.github-icon {
+.links-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-self: flex-start;
+}
+
+.link-item {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.link-icon {
+  color: var(--white-1); /* Color del icono */
   font-size: 20px;
-  margin-right: 0.5rem;
+}
+
+.link-item a {
+  color: var(--color-text-light); /* Gris claro */
+  text-decoration: none;
+  font-size: 0.9rem; /* Reducido el tamaño de fuente */
+  overflow: hidden;
+  white-space: nowrap; /* Evita el salto de línea */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+  max-width: 100%; /* Ajusta el ancho máximo para que quepa */
+}
+
+.link-item a:hover {
+  color: var(--color-primary); /* Cambio de color en hover */
 }
 </style>
