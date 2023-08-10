@@ -202,13 +202,13 @@ export default {
 .links-section {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   align-self: flex-start;
 }
 
 .link-item {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
   transition: transform 0.3s, color 0.3s;

@@ -6,6 +6,10 @@
 
   /* gradient */
 
+  /* Backgrounds */
+  --bg-main: hsl(180, 10%, 10%); /* Verde oscuro */
+  --bg-sidebar: hsl(210, 11%, 15%); /* Onyx (Negro azulado) */
+
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
@@ -58,6 +62,20 @@
   --color-accent: #2E4053; /* Azul más oscuro */
   --color-text: white;
   --color-text-light: #BDC3C7; /* Gris claro */
+
+  /* Text */
+  --text-main: hsl(0, 0%, 100%); /* Blanco */
+  --text-secondary: hsl(0, 0%, 80%); /* Gris claro */
+
+  /* Titles and Highlights */
+  --title-main: hsl(150, 100%, 30%); /* Verde brillante */
+  --title-accent: hsl(0, 43%, 51%); /* Bittersweet Shimmer (Rojo-anaranjado) */
+
+  /* Links */
+  --link-color: hsl(37, 90%, 51%); /* Vegas Gold (Dorado) */
+
+  /* Accents and Details */
+  --accent-color: hsl(240, 2%, 12%); /* Eerie Black */
 
   /**
    * typography
@@ -181,7 +199,7 @@ body { background: var(--smoky-black); }
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--vegas-gold);
+  color: var(--color-primary);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -240,7 +258,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--color-primary);
   border-radius: 3px;
 }
 
@@ -621,7 +639,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: var(--color-primary);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -643,7 +661,7 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--color-primary);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
@@ -1464,7 +1482,6 @@ textarea.contact::-webkit-resizer { display: none; }
 
   .sidebar, article {
     width: 950px;
-    box-shadow: var(--shadow-5);
   }
 
 

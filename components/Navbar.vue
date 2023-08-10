@@ -83,7 +83,7 @@ onUnmounted(() => {
 <style scoped>
 
 .navbar-link.navbar-link.active {
-  color: var(--vegas-gold);
+  color: var(--color-primary);
   font-weight: bold;
 }
 
