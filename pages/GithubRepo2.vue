@@ -122,7 +122,8 @@ export default {
   padding: 1rem;
   color: var(--white-1); /* Utilizando la variable */
   font-family: 'Segoe UI', sans-serif;
-  transition: transform var(--transition-1), background-color var(--transition-1);
+  transition: transform var(--transition-2), background-color var(--transition-2);
+  background: var(--border-gradient-onyx);
 }
 
 .flip-card:hover .flip-card-back {
@@ -197,6 +198,7 @@ export default {
 .language-item:hover {
   transform: scale(1.1); /* Cambiar la escala en hover */
   background-color: var(--color-primary); /* Cambio de color en hover */
+  color: var(--eerie-black-1);
 }
 
 .links-section {

@@ -24,7 +24,6 @@
     </article>
     <resume />
     <github />
-    <portfolio />
   </div>
 </template>
 

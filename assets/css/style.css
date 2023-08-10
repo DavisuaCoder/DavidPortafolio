@@ -57,8 +57,10 @@
   --bittersweet-shimmer: hsl(0, 43%, 51%);
   --text-gradient-yellow: hsl(37, 90%, 51%);
 
-  --color-primary: #4A90E2; /* Azul claro */
-  --color-secondary: #34495E; /* Azul oscuro */
+  --color-primary: #64ffda; /* GREEN */
+  --color-secondary: #112240; /* Light Navy */
+  --color-secondary-2: #8892b0; /* SLATE */
+  --color-secondary-3: #ccd6f6; /*LIGHTEST SLATE */
   --color-accent: #2E4053; /* Azul más oscuro */
   --color-text: white;
   --color-text-light: #BDC3C7; /* Gris claro */
@@ -199,7 +201,7 @@ body { background: var(--smoky-black); }
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--color-primary);
+  color: var(--color-secondary-3);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -628,7 +630,6 @@ main {
 .timeline-item-title {
   font-size: var(--fs-6);
   line-height: 1.3;
-  margin-bottom: 7px;
 }
 
 .timeline-item-desc {
@@ -639,7 +640,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--color-primary);
+  color: var(--color-secondary-2);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -661,7 +662,7 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--color-primary);
+  background: var(--color-secondary-3);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
@@ -674,6 +675,7 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  margin-bottom: 7px;
 }
 
 .job-technologies {
@@ -684,10 +686,11 @@ main {
 }
 
 .job-technologies li {
-  background-color: #868686;
+  background-color: rgba(45,212,191,.1);
   padding: 0.25rem 0.5rem;
   border-radius: 0.65rem;
   font-size: 0.8rem;
+  color: rgb(94 234 212);
 }
 
 /**

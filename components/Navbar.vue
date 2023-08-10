@@ -16,11 +16,6 @@
           {{ $t('pageTitles.github') }}
         </a>
       </li>
-      <li class="navbar-item">
-        <a href="#portfolio" class="navbar-link" :class="{ 'active': activeSection === 'portfolio' }">
-          {{ $t('pageTitles.portfolio') }}
-        </a>
-      </li>
     </ul>
   </nav>
 </template>
