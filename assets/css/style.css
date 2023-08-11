@@ -101,6 +101,8 @@
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
 
   /**
    * shadow
@@ -157,11 +159,11 @@ input, textarea {
 }
 
 ::selection {
-  background: var(--vegas-gold);
+  background: var(--color-primary);
   color: var(--smoky-black);
 }
 
-:focus { outline-color: var(--vegas-gold); }
+:focus { outline-color: var(--color-primary); }
 
 html { font-family: var(--ff-poppins); }
 
@@ -187,7 +189,7 @@ body { background: var(--smoky-black); }
 .separator {
   width: 100%;
   height: 1px;
-  background: var(--jet);
+  background: var(--color-secondary-3);
   margin: 16px 0;
 }
 
@@ -275,7 +277,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--vegas-gold);
+  background: var(--color-primary);
   border-radius: 5px;
 }
 
@@ -369,7 +371,7 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--vegas-gold);
+  color: var(--color-primary);
   background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
@@ -432,6 +434,9 @@ main {
 }
 
 .contact-info :is(.contact-link, time, address) {
+  color: hsl(0, 0%, 98%);
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: var(--white-2);
   font-size: var(--fs-7);
 }
@@ -843,7 +848,7 @@ main {
   --scale: 0.8;
 
   background: var(--jet);
-  color: var(--vegas-gold);
+  color: var(--color-primary);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1033,7 +1038,7 @@ main {
 
 .contact::placeholder { font-weight: var(--fw-500); }
 
-.contact:focus { border-color: var(--vegas-gold); }
+.contact:focus { border-color: var(--color-primary); }
 
 textarea.contact {
   min-height: 100px;
@@ -1051,7 +1056,7 @@ textarea.contact::-webkit-resizer { display: none; }
   position: relative;
   width: 100%;
   background: var(--border-gradient-onyx);
-  color: var(--vegas-gold);
+  color: var(--color-primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1430,7 +1435,7 @@ textarea.contact::-webkit-resizer { display: none; }
 
   .filter-item button:hover { color: var(--light-gray-70); }
 
-  .filter-item button.active { color: var(--vegas-gold); }
+  .filter-item button.active { color: var(--color-primary); }
 
   /* portfolio and blog grid */
 

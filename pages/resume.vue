@@ -66,13 +66,15 @@
       </ol>
       <div class="download-button-container">
         <a
-          download="David Alvarez Perales CV.pdf"
-          href="/files/David Alvarez Perales CV.pdf"
+          href="/Files/David Alvarez Perales CV.pdf"
           aria-label="Download Resume"
-          class="download-link"
+          class="cta"
         >
-          <ion-icon name="arrow-down-circle-outline" class="download-icon"></ion-icon>
-          <span class="download-text">Download Full Resume</span>
+          <span>Download Full Resume</span>
+          <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
         </a>
       </div>
     </section>
@@ -115,33 +117,70 @@ const experience = [
 <style scoped>
 /* Estilos para el botón de descarga */
 .download-button-container {
-  text-align: center;
   margin-top: 20px;
 }
 
-.download-link {
-  display: inline-flex;
-  padding: 10px 20px;
-  border: 1px solid;
-  border-color: var(--color-secondary-3);
-  color: white;
-  border-radius: 5px;
+a {
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  color: inherit;
 }
 
-.download-link:hover {
-  background-color: #0056b3;
+.cta {
+  position: relative;
+  display: inline-flex;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
 }
 
-.download-icon {
-  margin-right: 5px;
-  font-size: 20px;
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(45,212,191,.1);
+  width: 46px;
+  height: 46px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-size: var(--fs-8);
+  line-height: 10px;
+  font-weight: var(--fw-800);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
   vertical-align: middle;
+  color: rgb(94 234 212);
 }
 
-.download-text {
-  vertical-align: middle;
-  font-weight: bold;
+.cta svg {
+  position: relative;
+  align-self: center;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: rgb(94 234 212);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: rgba(45,212,191,.1);
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.96);
 }
 </style>

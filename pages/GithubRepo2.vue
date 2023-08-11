@@ -101,7 +101,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   box-shadow: var(--shadow-1); /* Utilizando la variable */
   cursor: pointer;
   color: var(--color-text); /* Utilizando la variable */
@@ -206,6 +205,7 @@ export default {
   flex-direction: column;
   align-items: flex-start;
   align-self: flex-start;
+  width: 100%;
 }
 
 .link-item {
@@ -214,6 +214,7 @@ export default {
   gap: 0.5rem;
   margin-bottom: 0.5rem;
   transition: transform 0.3s, color 0.3s;
+  width: 100%;
 }
 
 .link-icon {
