@@ -14,11 +14,49 @@
         </ul>
       </section>
 
-      <!-- service -->
-      <section class="service">
-        <br />
-        <ul class="service-list">
-          <ServiceItem v-for="service in services" :key="service.id" :service="service" />
+      <section class="techs">
+        <ul class="grid-techs">
+          <li class="techs-item">
+            <a href="https://example.com" target="_blank">
+              <img src="/images/techs/Python-logo.png" alt="Company">
+            </a>
+          </li>
+          <li class="techs-item">
+            <a href="https://example.com" target="_blank">
+              <img src="/images/techs/java-logo.png" alt="Company">
+            </a>
+          </li>
+          <li class="techs-item">
+            <a href="https://example.com" target="_blank">
+              <img src="/images/techs/node-logo.png" alt="Company">
+            </a>
+          </li>
+          <li class="techs-item">
+            <a href="https://example.com" target="_blank">
+              <img src="/images/techs/vue-logo.png" alt="Company">
+            </a>
+          </li>
+          <li class="techs-item">
+            <a href="https://example.com" target="_blank">
+              <img src="/images/techs/javascript-logo.png" alt="Company">
+            </a>
+          </li>
+          <li class="techs-item">
+            <a href="https://example.com" target="_blank">
+              <img src="/images/techs/linux-logo.png" alt="Company">
+            </a>
+          </li>
+          <li class="techs-item">
+            <a href="https://example.com" target="_blank">
+              <img src="/images/techs/docker-logo.webp" alt="Company">
+            </a>
+          </li>
+          <li class="techs-item">
+            <a href="https://example.com" target="_blank">
+              <img src="/images/techs/gcp-logo-cloud.webp" alt="Company">
+            </a>
+          </li>
+
         </ul>
       </section>
     </article>
@@ -48,3 +86,14 @@ const { data: services } = await useFetch('/api/services')
 /* Services */
 const { data: about } = await useFetch('/api/about')
 </script>
+
+<style scoped>
+/* ... tus estilos existentes ... */
+
+.grid-techs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+</style>

@@ -35,46 +35,37 @@ function toggleMenu() {
       <div class="separator" />
 
       <ul class="contacts-list">
-        <li class="contact-item">
+        <a href="mailto:david.alvarez.perales99@gmail.com" class="contact-item">
           <div class="icon-box">
             <ion-icon name="mail-outline"></ion-icon>
           </div>
-
           <div class="contact-info">
             <p class="contact-title">Email</p>
-
-            <a href="mailto:david.alvarez.perales99@gmail.com" class="contact-link">david.alvarez.perales99@gmail.com</a>
+            <span class="contact-link">david.alvarez.perales99@gmail.com</span>
           </div>
+        </a>
 
-        </li>
-
-        <li class="contact-item">
-
+        <!-- Phone -->
+        <a href="tel:+34689571913" class="contact-item">
           <div class="icon-box">
             <ion-icon name="phone-portrait-outline"></ion-icon>
           </div>
-
           <div class="contact-info">
             <p class="contact-title">Phone</p>
-
-            <a href="tel:+34689571913" class="contact-link">689 571 913</a>
+            <span class="contact-link">689 571 913</span>
           </div>
+        </a>
 
-        </li>
-
-        <li class="contact-item">
+        <!-- Linkedin -->
+        <a href="https://www.linkedin.com/in/david-alvarez-perales/" class="contact-item" target="_blank">
           <div class="icon-box">
             <ion-icon name="logo-linkedin" />
           </div>
-
           <div class="contact-info">
-            <p class="contact-title">
-              Linkedin
-            </p>
-
-            <a href="https://www.linkedin.com/in/david-alvarez-perales/" class="contact-link" target="_blank">David Álvarez Perales</a>
+            <p class="contact-title">Linkedin</p>
+            <span class="contact-link">David Álvarez Perales</span>
           </div>
-        </li>
+        </a>
 
         <li class="contact-item">
           <div class="icon-box">
@@ -99,3 +90,17 @@ function toggleMenu() {
     </div>
   </aside>
 </template>
+<style scoped>
+
+.contacts-list .contact-item:hover {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilos adicionales para el enlace del cursor */
+.contacts-list .contact-item:hover .contact-link {
+  text-decoration: underline;
+  text-decoration-color: var(--color-secondary-3);
+}
+
+</style>
