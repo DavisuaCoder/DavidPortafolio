@@ -18,43 +18,67 @@
         <ul class="grid-techs">
           <li class="techs-item">
             <a href="https://example.com" target="_blank">
-              <img src="/images/techs/Python-logo.png" alt="Company">
+              <img src="/images/techs/Python-logo.png" alt="Python" data-experience="5">
             </a>
+            <div class="tech-tooltip">
+              <p>+4 years of experience</p>
+            </div>
           </li>
           <li class="techs-item">
             <a href="https://example.com" target="_blank">
               <img src="/images/techs/java-logo.png" alt="Company">
             </a>
+            <div class="tech-tooltip">
+              <p>+2 years of experience</p>
+            </div>
           </li>
           <li class="techs-item">
             <a href="https://example.com" target="_blank">
               <img src="/images/techs/node-logo.png" alt="Company">
             </a>
+            <div class="tech-tooltip">
+              <p>+3 years of experience</p>
+            </div>
           </li>
           <li class="techs-item">
             <a href="https://example.com" target="_blank">
               <img src="/images/techs/vue-logo.png" alt="Company">
             </a>
+            <div class="tech-tooltip">
+              <p>+3 years of experience</p>
+            </div>
           </li>
           <li class="techs-item">
             <a href="https://example.com" target="_blank">
               <img src="/images/techs/javascript-logo.png" alt="Company">
             </a>
+            <div class="tech-tooltip">
+              <p>+4 years of experience</p>
+            </div>
           </li>
           <li class="techs-item">
             <a href="https://example.com" target="_blank">
               <img src="/images/techs/linux-logo.png" alt="Company">
             </a>
+            <div class="tech-tooltip">
+              <p>+2 years of experience</p>
+            </div>
           </li>
           <li class="techs-item">
             <a href="https://example.com" target="_blank">
               <img src="/images/techs/docker-logo.webp" alt="Company">
             </a>
+            <div class="tech-tooltip">
+              <p>+1 years of experience</p>
+            </div>
           </li>
           <li class="techs-item">
             <a href="https://example.com" target="_blank">
               <img src="/images/techs/gcp-logo-cloud.webp" alt="Company">
             </a>
+            <div class="tech-tooltip">
+              <p>+1 years of experience</p>
+            </div>
           </li>
 
         </ul>
@@ -89,11 +113,33 @@ const { data: about } = await useFetch('/api/about')
 
 <style scoped>
 /* ... tus estilos existentes ... */
-
 .grid-techs {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   justify-items: center;
+}
+
+/* Estilos para el tooltip */
+.tech-tooltip {
+  position: relative;
+}
+
+.tech-tooltip p {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--color-primary);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  display: none; /* Ocultar inicialmente */
+}
+
+.techs-item:hover .tech-tooltip p {
+  display: block; /* Mostrar cuando se pasa el ratón */
 }
 </style>
