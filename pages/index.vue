@@ -134,7 +134,7 @@ const { data: about } = await useFetch('/api/about')
   color: var(--color-primary);
   padding: 5px 10px;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: var(--fs-6);
   white-space: nowrap;
   display: none; /* Ocultar inicialmente */
 }

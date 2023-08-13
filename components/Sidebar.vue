@@ -10,12 +10,12 @@ function toggleMenu() {
   <aside class="sidebar" :class="{ active: isOpen }">
     <div class="sidebar-info">
       <figure class="avatar-box">
-        <img src="/images/avatar2.png" alt="Photo" width="80">
+        <img src="/images/avatar.png" alt="Photo" width="80">
       </figure>
 
       <div class="info-content">
         <h1 class="name" title="David Alvarez">
-          David Álvarez
+          David Álvarez Perales
         </h1>
 
         <p class="title text-center xl:block flex items-center justify-center gap-1">

@@ -346,6 +346,9 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 40px;
 }
+.info-content {
+  width: 100%;
+}
 
 .info-content .name {
   color: var(--white-2);
@@ -353,6 +356,10 @@ main {
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap; /* Evita el salto de línea */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+  max-width: 100%; /* Ajusta el ancho máximo para que quepa */
 }
 
 .info-content .title {
@@ -592,7 +599,7 @@ main {
 }
 
 .techs-item img {
-  width: 100px;
+  width: 80px;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
