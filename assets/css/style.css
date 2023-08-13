@@ -489,6 +489,21 @@ main {
   z-index: 5;
 }
 
+.navbar-scroll {
+  position: sticky;
+  bottom: auto;
+  top: 0;
+  left: auto;
+  right: 0;
+  width: auto;
+  background: hsla(240, 1%, 17%, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--jet);
+  border-radius: 0;
+  box-shadow: var(--shadow-2);
+  z-index: 5;
+}
+
 .navbar-list {
   display: flex;
   flex-wrap: wrap;
@@ -1032,6 +1047,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
   padding: 13px 20px;
+  width: 100%;
 }
 /* .github-repository {
   color: var(--white-2);
@@ -1107,7 +1123,7 @@ textarea.contact::-webkit-resizer { display: none; }
 \*-----------------------------------*/
 .flip-card {
   perspective: 1000px;
-  height: 307px;
+  height: 298px;
 }
 
 .flip-card-inner {
@@ -1288,7 +1304,10 @@ textarea.contact::-webkit-resizer { display: none; }
 
   .techs-item { min-width: calc(33.33% - 10px); }
 
-
+  .navbar {
+    bottom: auto;
+    border-radius: 0px;
+  }
 
   /**
    * #PORTFOLIO, BLOG 
@@ -1302,7 +1321,7 @@ textarea.contact::-webkit-resizer { display: none; }
 	 * PROJECTS
 	 */
    .flip-card {
-    height: 343px;
+    height: 336px;
   }
 
 
@@ -1344,7 +1363,7 @@ textarea.contact::-webkit-resizer { display: none; }
    * #REUSED STYLE
    */
 
-  .sidebar, article {
+  .sidebar, article, .general-container {
     width: 520px;
     margin-inline: auto;
     padding: 30px;
@@ -1429,9 +1448,10 @@ textarea.contact::-webkit-resizer { display: none; }
    * #NAVBAR
    */
 
-  .navbar { 
+   .navbar {
     bottom: auto;
-   }
+    border-radius: 0px;
+    }
 
   .navbar-list { gap: 20px; }
 
@@ -1552,7 +1572,7 @@ textarea.contact::-webkit-resizer { display: none; }
 	 * PROJECTS
 	 */
    .flip-card {
-    height: 354px;
+    height: 318px;
   }
 
 
@@ -1572,7 +1592,7 @@ textarea.contact::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: 700px; }
+  .sidebar, article, .general-container { width: 700px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
@@ -1649,7 +1669,7 @@ textarea.contact::-webkit-resizer { display: none; }
 	 * PROJECTS
 	 */
    .flip-card {
-    height: 260px;
+    height: 240px;
   }
 }
 
@@ -1685,7 +1705,7 @@ textarea.contact::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article {
+  .sidebar, article, .general-container {
     width: 950px;
   }
 
@@ -1783,7 +1803,7 @@ textarea.contact::-webkit-resizer { display: none; }
 	 * PROJECTS
 	 */
    .flip-card {
-    height: 330px;
+    height: 313px;
   }
 
 }
@@ -1821,7 +1841,7 @@ textarea.contact::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: auto; }
+  .sidebar, article, .general-container { width: auto; }
 
   article { min-height: 100%; }
 
@@ -1912,7 +1932,7 @@ textarea.contact::-webkit-resizer { display: none; }
 	 * PROJECTS
 	 */
    .flip-card {
-    height: 307px;
+    height: 298px;
   }
 
 }

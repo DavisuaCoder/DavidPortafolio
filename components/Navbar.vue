@@ -35,7 +35,7 @@ const handleScroll = () => {
 
   const scrollY = window.scrollY;
   const scrollTop = window.scrollY;
-  const headerHeight = 50; // Altura de la cabecera (ajusta según tu diseño)
+  const headerHeight = 200; // Altura de la cabecera (ajusta según tu diseño)
 
   if (scrollTop < headerHeight) {
     activeSection.value = 'about';
@@ -61,7 +61,7 @@ const handleScroll = () => {
   }
 
   // Actualizar el estado de la variable isScrolled
-  isScrolled.value = scrollY > 50;
+  isScrolled.value = scrollY > 250;
 };
 
 onMounted(() => {
