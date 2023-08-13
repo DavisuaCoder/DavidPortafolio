@@ -66,7 +66,7 @@
       </ol>
       <div class="download-button-container">
         <a
-          href="/Files/David Alvarez Perales CV.pdf"
+          href="/Files/DavidAlvarezPerales-CV.pdf"
           aria-label="Download Resume"
           class="cta"
         >
