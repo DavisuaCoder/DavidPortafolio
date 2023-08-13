@@ -1,7 +1,7 @@
 <template>
   <li class="about-item">
     <div class="about-content-box">
-      <p class="about-item-text" v-html="highlightText(about.description?.en)">
+      <p class="about-item-text" v-html="highlightText(locale === 'en' ? about.description?.en : about.description?.id_ID)">
       </p>
     </div>
   </li>
@@ -24,7 +24,10 @@ const highlightText = (text) => {
     text = text.replace('analytical thinking', '<span class="highlight">analytical thinking</span>')
     text = text.replace('decision-making skills,', '<span class="highlight">decision-making skills,</span>')
     text = text.replace('innovative solutions', '<span class="highlight">innovative solutions</span>')
-    text = text.replace('Indonesia', '<span class="highlight">Indonesia</span>')
+    text = text.replace('Arquitecto de Soluciones', '<span class="highlight">Arquitecto de Soluciones</span>')
+    text = text.replace('pensamiento analítico', '<span class="highlight">pensamiento analítico</span>')
+    text = text.replace('desafíos complejos', '<span class="highlight">desafíos complejos,</span>')
+    text = text.replace('soluciones innovadoras', '<span class="highlight">soluciones innovadoras</span>')
   }
   return text
 }
