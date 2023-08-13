@@ -60,7 +60,8 @@ export default {
         Python: 'logo-python',
         HTML: 'logo-html5',
         CSS: 'logo-css3',
-        Vue: 'logo-vue'
+        Vue: 'logo-vue',
+        Dockerfile: 'logo-docker'
       };
 
       return languageIcons[language] || 'code';
