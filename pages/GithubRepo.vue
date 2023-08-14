@@ -1,7 +1,7 @@
 <template>
   <div class="border h-full rounded p-4 flex flex-col">
     <div class="flex flex-wrap items-center">
-      <img src="/images/projects/portafolio-programador.webp" :alt="repository.name">
+      <img src="/images/projects/DavidPortafolio.jpg" :alt="repository.name">
       <svg viewBox="0 0 16 16" class="w-4 h-4 fill-current mr-2" aria-hidden="true">
         <path fill-rule="evenodd" :d="icon.book"></path>
       </svg>
