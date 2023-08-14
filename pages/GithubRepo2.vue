@@ -2,8 +2,8 @@
   <div class="flip-card" @click="openRepository">
     <div class="flip-card-inner">
       <div class="flip-card-front rounded-xl">
-        <img class="repository-img border-none rounded-t-xl" src="/images/projects/portafolio-programador.webp" :alt="repository.name">
-        <div class="text-center px-4 py-2">
+        <img class="repository-img border-none rounded-t-xl" :src="repositoryImageSrc" :alt="repository.name">
+        <div class="text-center px-4">
           <a :href="repository.html_url" target="_blank" class="repository-name">{{ repository.name }}</a>
         </div>
       </div>
@@ -49,6 +49,22 @@ export default {
       type: String,
       default: undefined
     }
+  },
+  computed: {
+    repositoryImageSrc() {
+      const repositoryName = this.repository.name;
+      const repositoryImageURL = `/images/projects/${repositoryName}.jpg`;
+      const genericImageURL = "/images/projects/generic.jpg";
+
+      const img = new Image();
+      img.src = repositoryImageURL;
+      img.onerror = () => {
+        img.src = genericImageURL; // Fallback to the generic image
+        console.log(img.src)
+      };
+
+      return img.src;
+    },
   },
   methods: {
     openRepository() {

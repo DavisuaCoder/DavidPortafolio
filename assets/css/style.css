@@ -1035,13 +1035,6 @@ main {
 
 .form-title { margin-bottom: 20px; }
 
-.input-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 25px;
-  margin-bottom: 25px;
-}
-
 .github {
   color: var(--white-2);
   font-size: var(--fs-6);
@@ -1121,6 +1114,14 @@ textarea.contact::-webkit-resizer { display: none; }
 /*-----------------------------------*\
   #GITHUB
 \*-----------------------------------*/
+
+.input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
 .flip-card {
   perspective: 1000px;
   height: 298px;
@@ -1152,6 +1153,7 @@ textarea.contact::-webkit-resizer { display: none; }
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   box-shadow: var(--shadow-1); /* Utilizando la variable */
   cursor: pointer;
   color: var(--color-text); /* Utilizando la variable */
@@ -1184,6 +1186,8 @@ textarea.contact::-webkit-resizer { display: none; }
 .repository-img {
   width: 100%;
   height: auto;
+  max-height: 80%;
+  object-fit: cover;
   margin: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -1320,9 +1324,9 @@ textarea.contact::-webkit-resizer { display: none; }
    /**
 	 * PROJECTS
 	 */
-   .flip-card {
+   /* .flip-card {
     height: 336px;
-  }
+  } */
 
 
 }
@@ -1571,9 +1575,9 @@ textarea.contact::-webkit-resizer { display: none; }
    /**
 	 * PROJECTS
 	 */
-   .flip-card {
+   /* .flip-card {
     height: 318px;
-  }
+  } */
 
 
 }
@@ -1668,9 +1672,9 @@ textarea.contact::-webkit-resizer { display: none; }
    /**
 	 * PROJECTS
 	 */
-   .flip-card {
+   /* .flip-card {
     height: 240px;
-  }
+  } */
 }
 
 
@@ -1802,9 +1806,9 @@ textarea.contact::-webkit-resizer { display: none; }
    /**
 	 * PROJECTS
 	 */
-   .flip-card {
+   /* .flip-card {
     height: 313px;
-  }
+  } */
 
 }
 
@@ -1931,8 +1935,8 @@ textarea.contact::-webkit-resizer { display: none; }
    /**
 	 * PROJECTS
 	 */
-   .flip-card {
+   /* .flip-card {
     height: 298px;
-  }
+  } */
 
 }
