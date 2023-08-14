@@ -1,9 +1,4 @@
-<center><img src="/public/images/icon/android-chrome-512x512.png" /></center>
-
-<p align="center">
-    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/agcrisbp/5079a593a8985c711db095c0d4cfa440/raw/clone.json&logo=github'>
-    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Unique&query=uniques&url=https://gist.githubusercontent.com/agcrisbp/5079a593a8985c711db095c0d4cfa440/raw/clone.json&logo=githubactions&logoColor=white'>
-</p>
+<center><img src="/public/images/icon/android-chrome-512x512.png" align="center"/></center>
 
 ### About
 - Resume/Portfolio website using Vue (Nuxt 3) extends from [codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio).
