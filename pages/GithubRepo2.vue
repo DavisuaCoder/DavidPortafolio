@@ -1,5 +1,5 @@
 <template>
-  <div class="flip-card" @click="openRepository">
+  <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front rounded-xl">
         <img class="repository-img border-none rounded-t-xl" :src="repositoryImageSrc" :alt="repository.name">
@@ -74,9 +74,6 @@ export default {
         console.log("Error loading image:", img.src);
       };
     },
-    openRepository() {
-      window.open(this.repository.html_url, '_blank');
-    }, 
     getLanguageIconName(language) {
       const languageIcons = {
         JavaScript: 'logo-javascript',
