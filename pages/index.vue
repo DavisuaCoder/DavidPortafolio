@@ -17,70 +17,53 @@
       <section class="techs">
         <ul class="grid-techs">
           <li class="techs-item">
-            <a href="https://example.com" target="_blank">
-              <img src="/images/techs/Python-logo.png" alt="Python" data-experience="5">
-            </a>
+            <img src="/images/techs/Python-logo.png" alt="Python" data-experience="5">
             <div class="tech-tooltip">
               <p>+4 years of experience</p>
             </div>
           </li>
           <li class="techs-item">
-            <a href="https://example.com" target="_blank">
-              <img src="/images/techs/java-logo.png" alt="Company">
-            </a>
+            <img src="/images/techs/java-logo.png" alt="Company">
             <div class="tech-tooltip">
               <p>+2 years of experience</p>
             </div>
           </li>
           <li class="techs-item">
-            <a href="https://example.com" target="_blank">
-              <img src="/images/techs/node-logo.png" alt="Company">
-            </a>
+            <img src="/images/techs/node-logo.png" alt="Company">
             <div class="tech-tooltip">
               <p>+3 years of experience</p>
             </div>
           </li>
           <li class="techs-item">
-            <a href="https://example.com" target="_blank">
-              <img src="/images/techs/vue-logo.png" alt="Company">
-            </a>
+            <img src="/images/techs/vue-logo.png" alt="Company">
             <div class="tech-tooltip">
               <p>+3 years of experience</p>
             </div>
           </li>
           <li class="techs-item">
-            <a href="https://example.com" target="_blank">
-              <img src="/images/techs/javascript-logo.png" alt="Company">
-            </a>
+            <img src="/images/techs/javascript-logo.png" alt="Company">
             <div class="tech-tooltip">
               <p>+4 years of experience</p>
             </div>
           </li>
           <li class="techs-item">
-            <a href="https://example.com" target="_blank">
-              <img src="/images/techs/linux-logo.png" alt="Company">
-            </a>
+            <img src="/images/techs/linux-logo.png" alt="Company">
             <div class="tech-tooltip">
               <p>+2 years of experience</p>
             </div>
           </li>
           <li class="techs-item">
-            <a href="https://example.com" target="_blank">
-              <img src="/images/techs/docker-logo.webp" alt="Company">
-            </a>
+            <img src="/images/techs/docker-logo.webp" alt="Company">
             <div class="tech-tooltip">
               <p>+1 years of experience</p>
             </div>
           </li>
           <li class="techs-item">
-            <a href="https://example.com" target="_blank">
-              <img src="/images/techs/gcp-logo-cloud.webp" alt="Company">
-            </a>
+            <img src="/images/techs/gcp-logo-cloud.webp" alt="Company">
             <div class="tech-tooltip">
               <p>+1 years of experience</p>
             </div>
           </li>
-
         </ul>
       </section>
     </article>

@@ -1124,7 +1124,7 @@ textarea.contact::-webkit-resizer { display: none; }
 
 .flip-card {
   perspective: 1000px;
-  height: 298px;
+  height: auto;
 }
 
 .flip-card-inner {
@@ -1133,7 +1133,7 @@ textarea.contact::-webkit-resizer { display: none; }
   height: 100%;
   transition: transform var(--transition-1);
   transform-style: preserve-3d;
-}
+  }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
@@ -1146,9 +1146,12 @@ textarea.contact::-webkit-resizer { display: none; }
   height: 100%;
   backface-visibility: hidden;
   border-radius: 10px;
-}
+  transform: rotateY(0deg); /* Añade esta línea */
+  }
 
 .flip-card-front {
+  position: relative;
+  height: 100%;
   background-color: var(--color-secondary); /* Utilizando la variable */
   display: flex;
   flex-direction: column;
@@ -1162,6 +1165,8 @@ textarea.contact::-webkit-resizer { display: none; }
 }
 
 .flip-card-back {
+  top: 0;
+  left: 0;
   background-color: var(--color-secondary); /* Utilizando la variable */
   display: flex;
   flex-direction: column;
@@ -1185,8 +1190,7 @@ textarea.contact::-webkit-resizer { display: none; }
 
 .repository-img {
   width: 100%;
-  height: auto;
-  max-height: 80%;
+  height: 240px;
   object-fit: cover;
   margin: 0;
   border-top-left-radius: 10px;

@@ -26,7 +26,7 @@ const highlightText = (text) => {
     text = text.replace('innovative solutions', '<span class="highlight">innovative solutions</span>')
     text = text.replace('Arquitecto de Soluciones', '<span class="highlight">Arquitecto de Soluciones</span>')
     text = text.replace('pensamiento analítico', '<span class="highlight">pensamiento analítico</span>')
-    text = text.replace('desafíos complejos', '<span class="highlight">desafíos complejos,</span>')
+    text = text.replace('desafíos complejos', '<span class="highlight">desafíos complejos</span>')
     text = text.replace('soluciones innovadoras', '<span class="highlight">soluciones innovadoras</span>')
   }
   return text
