@@ -50,23 +50,30 @@ export default {
       default: undefined
     }
   },
-  computed: {
-    repositoryImageSrc() {
+  data() {
+    return {
+      repositoryImageSrc: "/images/projects/generic.png",
+    };
+  },
+  created() {
+    this.loadRepositoryImage();
+  },
+  methods: {
+    loadRepositoryImage() {
       const repositoryName = this.repository.name;
       const repositoryImageURL = `/images/projects/${repositoryName}.jpg`;
-      const genericImageURL = "/images/projects/generic.jpg";
 
       const img = new Image();
       img.src = repositoryImageURL;
-      img.onerror = () => {
-        img.src = genericImageURL; // Fallback to the generic image
-        console.log(img.src)
+
+      img.onload = () => {
+        this.repositoryImageSrc = repositoryImageURL;
       };
 
-      return img.src;
+      img.onerror = () => {
+        console.log("Error loading image:", img.src);
+      };
     },
-  },
-  methods: {
     openRepository() {
       window.open(this.repository.html_url, '_blank');
     }, 
