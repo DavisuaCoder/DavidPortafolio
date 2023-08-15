@@ -93,36 +93,3 @@ const { data: services } = await useFetch('/api/services')
 /* Services */
 const { data: about } = await useFetch('/api/about')
 </script>
-
-<style scoped>
-/* ... tus estilos existentes ... */
-.grid-techs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-
-/* Estilos para el tooltip */
-.tech-tooltip {
-  position: relative;
-}
-
-.tech-tooltip p {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.8);
-  color: var(--color-primary);
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: var(--fs-6);
-  white-space: nowrap;
-  display: none; /* Ocultar inicialmente */
-}
-
-.techs-item:hover .tech-tooltip p {
-  display: block; /* Mostrar cuando se pasa el ratón */
-}
-</style>

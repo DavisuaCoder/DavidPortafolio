@@ -222,6 +222,7 @@ body { background: var(--smoky-black); }
 article { display: none; }
 
 article.active {
+  width: 100%;
   display: block;
   animation: fade 0.5s ease backwards;
 }
@@ -313,7 +314,6 @@ article.active {
 
 main {
   margin: 15px 12px;
-  margin-bottom: 75px;
   min-width: 259px;
 }
 
@@ -591,9 +591,7 @@ main {
  * #techs 
  */
 
-.techs { margin-bottom: 15px; }
-
-.techs-list {
+ .grid-techs {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -606,7 +604,37 @@ main {
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: 25px;
+  width: 100%;
 }
+
+.tech-tooltip p {
+  position: absolute;
+  bottom: -20px;
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--color-primary);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: var(--fs-8);
+  white-space: nowrap;
+  display: none; /* Ocultar inicialmente */
+  overflow: hidden;
+  white-space: nowrap; /* Evita el salto de línea */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+  max-width: 100%; 
+}
+
+/* Estilos para el tooltip */
+.tech-tooltip {
+  position: relative;
+}
+
+.techs-item:hover .tech-tooltip p {
+  display: block; /* Mostrar cuando se pasa el ratón */
+}
+
+.techs { margin-bottom: 15px; }
 
 .techs-item {
   min-width: 50%;
@@ -614,7 +642,7 @@ main {
 }
 
 .techs-item img {
-  width: 80px;
+  width: 4rem;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
@@ -1306,6 +1334,10 @@ textarea.contact::-webkit-resizer { display: none; }
 
 @media (min-width: 450px) {
 
+  main {
+    margin-top: 75px;
+  }
+
   /**
    * client
    */
@@ -1401,8 +1433,7 @@ textarea.contact::-webkit-resizer { display: none; }
    */
 
   main {
-    margin-top: 60px;
-    margin-bottom: 100px;
+    margin-top: 90px;
   }
 
 
@@ -1480,7 +1511,6 @@ textarea.contact::-webkit-resizer { display: none; }
     justify-content: flex-start;
     align-items: flex-start;
     gap: 18px;
-    padding: 30px;
   }
   
   .about-item-text {
@@ -1604,8 +1634,32 @@ textarea.contact::-webkit-resizer { display: none; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
-
-
+   /**
+   * TECHS
+   */
+  .grid-techs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 0 -15px;
+    padding: 25px;
+    padding-bottom: 25px;
+  }
+  .tech-tooltip p {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--color-primary);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: var(--fs-6);
+    white-space: nowrap;
+    display: none; /* Ocultar inicialmente */
+    max-width: none;
+  }
   /**
    * SIDEBAR
    */
@@ -1723,7 +1777,10 @@ textarea.contact::-webkit-resizer { display: none; }
    * MAIN 
    */
 
-  main { margin-bottom: 60px; }
+  main { 
+    margin-top: 60px;
+    margin-bottom: 60px; 
+  }
 
   .main-content {
     position: relative;
