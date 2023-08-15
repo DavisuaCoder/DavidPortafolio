@@ -23,7 +23,7 @@
         <div class="links-section">
           <div class="link-item">
             <ion-icon name="log-out-outline" class="link-icon"></ion-icon>
-            <a :href="repository.website" target="_blank">Website</a>
+            <a :href="repository.homepage" target="_blank">{{repository.homepage}}</a>
           </div>
           <div class="link-item">
             <ion-icon name="logo-github" class="link-icon"></ion-icon>
