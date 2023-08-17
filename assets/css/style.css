@@ -315,6 +315,7 @@ article.active {
 main {
   margin: 15px 12px;
   min-width: 259px;
+  margin-top: 75px;
 }
 
 
@@ -637,7 +638,7 @@ main {
 .techs { margin-bottom: 15px; }
 
 .techs-item {
-  min-width: 50%;
+  min-width: 33.33%;
   scroll-snap-align: start;
 }
 
