@@ -643,9 +643,9 @@ main {
 }
 
 .techs-item img {
-  width: 4rem;
-  filter: grayscale(1);
-  transition: var(--transition-1);
+    width: 4rem;
+    filter: opacity(0.5);
+    transition: var(--transition-1);
 }
 
 .techs-item img:hover { filter: grayscale(0); }
