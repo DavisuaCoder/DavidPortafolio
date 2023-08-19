@@ -1407,7 +1407,7 @@ textarea.contact::-webkit-resizer { display: none; }
   .sidebar, article, .general-container {
     width: 520px;
     margin-inline: auto;
-    padding: 30px;
+    padding: 13px 20px;
   }
 
   .article-title {
@@ -1645,7 +1645,6 @@ textarea.contact::-webkit-resizer { display: none; }
     justify-items: center;
     margin: 0 -15px;
     padding: 25px;
-    padding-bottom: 25px;
   }
   .tech-tooltip p {
     position: absolute;
