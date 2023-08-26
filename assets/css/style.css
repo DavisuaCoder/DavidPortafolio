@@ -1471,8 +1471,6 @@ textarea.contact::-webkit-resizer { display: none; }
   .info-content .title { padding: 5px 18px; }
 
   .info_more-btn {
-    top: -30px;
-    right: -30px;
     padding: 10px 15px;
   }
 
