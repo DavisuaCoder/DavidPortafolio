@@ -4,3 +4,6 @@ dist
 .output
 .nuxt
 .env
+
+# Local Netlify folder
+.netlify
