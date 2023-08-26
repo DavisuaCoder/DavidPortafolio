@@ -679,9 +679,19 @@ main {
   margin-left: 45px;
 }
 
-.timeline-item { position: relative; }
+.timeline-item { 
+  position: relative; 
+  transition: transform 0.3s, background-color 0.3s;
+}
 
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
+
+.timeline-item:hover { 
+  background-color: rgba(45,212,191,.1);
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.65rem;
+  transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+}
 
 .timeline-item-title {
   font-size: var(--fs-6);
