@@ -30,7 +30,6 @@ const handleScroll = () => {
   // Verificar la posición del scroll en relación con cada sección de la página
   const aboutSection = document.getElementById('about');
   const resumeSection = document.getElementById('resume');
-  const portfolioSection = document.getElementById('portfolio');
   const githubSection = document.getElementById('github');
 
   const scrollY = window.scrollY;
