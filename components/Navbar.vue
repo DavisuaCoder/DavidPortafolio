@@ -52,12 +52,9 @@ const handleScroll = () => {
   ) {
     activeSection.value = 'resume';
   } else if (
-    scrollY >= githubSection.offsetTop && 
-    scrollY < portfolioSection.offsetTop
+    scrollY >= resumeSection.offsetTop
   ) {
     activeSection.value = 'github';
-  } else {
-    activeSection.value = 'portafolio';
   }
 
   // Actualizar el estado de la variable isScrolled
