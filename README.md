@@ -7,7 +7,7 @@
 - Spanish & English.
 
 ### Demo
-- Check the live version [here](https://davidalvarezperales.netlify.app/).
+- Check the live version [here](https://david-alvarez-perales.netlify.app/).
 
 ---
 
