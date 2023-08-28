@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: 'Github',
+  title: 'Projects',
 })
 </script>
 
@@ -8,7 +8,7 @@ useHead({
   <article id="github" class="github active" data-page="github">
     <header>
       <h2 class="h2 article-title">
-        {{ $t('pageTitles.github') }}
+        {{ $t('pageTitles.projects') }}
       </h2>
     </header>
 

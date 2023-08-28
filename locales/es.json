@@ -6,6 +6,7 @@
         "resume": "Resumen",
         "portfolio": "Proyectos",
         "blog": "Blog",
-        "github": "Github"
+        "github": "Github", 
+        "projects": "Proyectos"
     }
 }

@@ -13,7 +13,7 @@
       </li>
       <li class="navbar-item">
         <a href="#github" class="navbar-link" :class="{ 'active': activeSection === 'github' }">
-          {{ $t('pageTitles.github') }}
+          {{ $t('pageTitles.projects') }}
         </a>
       </li>
     </ul>
