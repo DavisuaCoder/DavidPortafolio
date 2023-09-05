@@ -684,7 +684,7 @@ main {
   transition: transform 0.3s, background-color 0.3s;
 }
 
-.timeline-item:not(:last-child) { margin-bottom: 20px; }
+.timeline-item:not(:last-child) { margin-bottom: 30px; }
 
 .timeline-item:hover { 
   background-color: rgba(45,212,191,.1);

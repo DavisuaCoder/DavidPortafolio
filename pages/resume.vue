@@ -15,10 +15,30 @@
       </div>
       <ol class="timeline-list">
         <li class="timeline-item" v-for="job in experience" :key="job.title">
-          <h4 class="h4 timeline-item-title">{{ job.title }}</h4>
-          <p class="timeline-text">{{ job.company }}</p>
-          <span>{{ job.date }}</span>
-          <p class="timeline-item-desc">{{ job.location }}</p>
+          <div class="timeline-item-content">
+            <!-- Item Header -->
+            <div class="timeline-item-content-header">
+              <!-- Title + Institution Flex Column -->
+              <div class="flex-column-title">
+                  <h4 class="timeline-item-title fw-bold">{{ job.title }}</h4>
+                  <h6 class="timeline-item-subtitle text-light-6 text-3">
+                    <ion-icon class="timeline-icon" name="business-outline"></ion-icon>
+                      <span>{{ job.company }}</span>
+                  </h6>
+              </div>
+
+              <div class="flex-column-date">
+                  <!-- Date Tags -->
+                  <div class="tag">
+                    <ion-icon class="timeline-icon" name="calendar-outline"></ion-icon>
+                    <span>{{ job.date}}</span>
+                  </div>
+              </div>
+            </div>
+            <div class="timeline-item-content-body mt-2">
+              <p class="text-3 timeline-description">{{ job.description }}</p>
+            </div>
+          </div>
 
           <!-- Etiquetas de tecnologías -->
           <ul class="job-technologies">
@@ -39,29 +59,28 @@
         <h3 class="h3">Education</h3>
       </div>
       <ol class="timeline-list">
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            Dual Bachelor of Computer Engineering and Business Administration
-          </h4>
-          <p class="timeline-text">
-            UC3M UNIVERSITY
-          </p>
-          <span>2018 — 2023</span>
-          <p class="timeline-item-desc">
-            Madrid, Spain
-          </p>
-        </li>
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            Bachelor of Agile Organizations and Digital Transformation
-          </h4>
-          <p class="timeline-text">
-            CAMILO JOSÉ CELA UNIVERSITY
-          </p>
-          <span>2022 — 2023</span>
-          <p class="timeline-item-desc">
-            Madrid, Spain
-          </p>
+        <li class="timeline-item" v-for="job in education" :key="job.title">
+          <div class="timeline-item-content">
+            <!-- Item Header -->
+            <div class="timeline-item-content-header">
+              <!-- Title + Institution Flex Column -->
+              <div class="flex-column-title">
+                  <h4 class="timeline-item-title fw-bold">{{ job.title }}</h4>
+                  <h6 class="timeline-item-subtitle text-light-6 text-3">
+                    <ion-icon class="timeline-icon" name="business-outline"></ion-icon>
+                      <span>{{ job.university }}</span>
+                  </h6>
+              </div>
+
+              <div class="flex-column-date">
+                  <!-- Date Tags -->
+                  <div class="tag">
+                    <ion-icon class="timeline-icon" name="calendar-outline"></ion-icon>
+                    <span>{{ job.date}}</span>
+                  </div>
+              </div>
+            </div>
+          </div>  
         </li>
       </ol>
       <div class="download-button-container">
@@ -85,32 +104,44 @@
 const experience = [
   {
     title: 'Solutions Architect',
-    date: 'DEC 2022 — Current',
-    location: 'Madrid, Spain',
+    date: 'Dec 2022 ➔ Currently',
     company: 'Dars Telecom',
+    description:'Translated business needs to solutions, collaborated on Java projects, led innovation, and improved software efficiency with Python',
     technologies: ['Python', 'Java', 'JPA', 'CI/CD', 'Excel'],
   },
   {
     title: 'Systems Engineer',
-    date: 'SEP 2022 — DEC 2022',
-    location: 'Madrid, Spain',
+    date: 'Sep 2022 ➔ Dec 2022',
     company: 'Dars Telecom',
+    description: 'Managed Unix/Linux systems and virtualized environments with VMware, delivered L3 support',
     technologies: ['Bash', 'Linux/Unix', 'Python', 'VMWare', 'Oracle'],
   },
   {
     title: 'Project Management Officer',
-    date: 'JUN 2022 — SEP 2022',
-    location: 'Madrid, Spain',
+    date: 'Jun 2022 ➔ Sep 2022',
     company: 'Accenture',
+    description: 'Oversaw project tasks, engaged stakeholders, and identified risks in control meetings',
     technologies: ['Excel', 'PowertPoint', 'Power BI'],
   },
   {
     title: 'Full Stack Developer (VueJS/ExpressJS)',
-    date: 'JUN 2021 — JUN 2022',
-    location: 'Madrid, Spain',
+    date: 'Jun 2021 ➔ Jun 2022',
     company: 'Automoviles Aerolan',
+    description: 'Designed website with NodeJS, VueJS, and ArangoDB, creating a secure and scalable system architecture for web applications.',
     technologies: ['VueJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
   },
+] 
+const education = [
+  {
+    title: 'Dual Bachelor of Computer Engineering and Business Administration',
+    date: 'Sep 2018 ➔ Jun 2023',
+    university: 'UC3M University'
+  },
+  {
+    title: 'Master in Agile Organizations and Digital Transformation',
+    date: 'Sep 2022 ➔ Sep 2023',
+    university: 'Camilo José Cela University'
+  }
 ]
 </script>
 
@@ -183,4 +214,59 @@ a {
 .cta:active {
   transform: scale(0.96);
 }
+
+.timeline-icon {
+  margin-right: 0.5rem;
+  color: var(--light-gray-70);
+}
+
+.timeline-item-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px; /* Tamaño del título */
+}
+
+.timeline-list span {
+  color: var(--light-gray-70);
+  font-weight: var(fw-400);
+  line-height: 1.6;
+}
+
+.timeline-item-subtitle {
+    font-size: 14px; /* Tamaño del subtítulo */
+    color: --var(--light-gray-70);
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item-content-header {
+    display: flex;
+}
+
+.flex-column-title {
+    padding-right: 2rem; /* Espacio entre el título y el subtítulo */
+}
+
+.flex-column-date {
+    margin-left: auto; /* Mover la fecha a la derecha */
+}
+.tag{
+    background-color: var(--smoky-black);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-8);
+}
+
+.timeline-item-content-body {
+    margin-top: 20px; /* Espacio entre el contenido y la descripción */
+}
+
+.timeline-description {
+    /* Estilo para el texto normal en la descripción */
+    color: var(--light-gray-70);
+    font-size: 14px;
+}
+
 </style>
