@@ -103,7 +103,7 @@
 <script setup>
 const experience = [
   {
-    title: 'Solutions Architect',
+    title: 'Software Engineer',
     date: 'Dec 2022 ➔ Currently',
     company: 'Dars Telecom',
     description:'Translated business needs to solutions, collaborated on Java projects, led innovation, and improved software efficiency with Python',
@@ -213,60 +213,6 @@ a {
 
 .cta:active {
   transform: scale(0.96);
-}
-
-.timeline-icon {
-  margin-right: 0.5rem;
-  color: var(--light-gray-70);
-}
-
-.timeline-item-title {
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px; /* Tamaño del título */
-}
-
-.timeline-list span {
-  color: var(--light-gray-70);
-  font-weight: var(fw-400);
-  line-height: 1.6;
-}
-
-.timeline-item-subtitle {
-    font-size: 14px; /* Tamaño del subtítulo */
-    color: --var(--light-gray-70);
-    display: flex;
-    align-items: center;
-}
-
-.timeline-item-content-header {
-    display: flex;
-}
-
-.flex-column-title {
-    padding-right: 2rem; /* Espacio entre el título y el subtítulo */
-}
-
-.flex-column-date {
-    margin-left: auto; /* Mover la fecha a la derecha */
-}
-.tag{
-    background-color: var(--smoky-black);
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    font-size: var(--fs-8);
-}
-
-.timeline-item-content-body {
-    margin-top: 20px; /* Espacio entre el contenido y la descripción */
-}
-
-.timeline-description {
-    /* Estilo para el texto normal en la descripción */
-    color: var(--light-gray-70);
-    font-size: 14px;
 }
 
 </style>

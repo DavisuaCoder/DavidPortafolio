@@ -20,7 +20,7 @@ const { locale } = useI18n({ useScope: 'global' })
 const highlightText = (text) => {
   if (text) {
     // Reemplaza las palabras que deseas resaltar con <span> y una clase CSS
-    text = text.replace('Solution Architect', '<span class="highlight">Solution Architect</span>')
+    text = text.replace('Software Engineer', '<span class="highlight">Software Engineer</span>')
     text = text.replace('analytical thinking', '<span class="highlight">analytical thinking</span>')
     text = text.replace('decision-making skills,', '<span class="highlight">decision-making skills,</span>')
     text = text.replace('innovative solutions', '<span class="highlight">innovative solutions</span>')
