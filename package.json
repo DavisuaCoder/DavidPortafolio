@@ -30,6 +30,7 @@
   "dependencies": {
     "@eggsydev/vue-lanyard": "^1.1.3",
     "@egjs/vue3-flicking": "^4.10.8",
+    "@intlify/devtools-if": "^9.5.0",
     "@pinia-orm/nuxt": "^1.6.7",
     "axios": "^1.4.0",
     "framer-motion": "^10.13.0",
